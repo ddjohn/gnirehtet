@@ -24,5 +24,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "gnirehtet"
 include(":gnirehtet")
-//include(":relay-java")
+include(":relay-java")
 include(":relay-rust")
