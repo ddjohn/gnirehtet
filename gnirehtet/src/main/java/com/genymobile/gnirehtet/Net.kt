@@ -28,7 +28,6 @@ object Net {
         return result
     }
 
-    @JvmStatic
     fun toInetAddress(address: String?): InetAddress? {
         try {
             return InetAddress.getByName(address)

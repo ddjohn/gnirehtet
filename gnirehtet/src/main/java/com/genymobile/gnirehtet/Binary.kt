@@ -24,17 +24,14 @@ object Binary {
         return value.toInt() and 0xff
     }
 
-    @JvmStatic
     fun unsigned(value: Short): Int {
         return value.toInt() and 0xffff
     }
 
-    @JvmStatic
     fun unsigned(value: Int): Long {
         return value.toLong() and 0xffffffffL
     }
 
-    @JvmStatic
     fun buildPacketString(data: ByteArray?, len: Int): String {
         val limit = min(MAX_STRING_PACKET_SIZE, len)
         val builder = StringBuilder()

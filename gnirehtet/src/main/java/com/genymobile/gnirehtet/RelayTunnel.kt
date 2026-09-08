@@ -30,8 +30,6 @@ class RelayTunnel private constructor() : Tunnel {
 
         private const val LOCAL_ABSTRACT_NAME = "gnirehtet"
 
-        //@Suppress("unused")
-        @JvmStatic
         @Throws(IOException::class)
         fun open(vpnService: VpnService?): RelayTunnel {
             DLog.debug(TAG, "Opening a new relay tunnel...")

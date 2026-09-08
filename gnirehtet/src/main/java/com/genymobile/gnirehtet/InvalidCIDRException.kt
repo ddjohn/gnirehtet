@@ -28,7 +28,7 @@ class InvalidCIDRException : Exception {
 
     companion object {
         private fun createMessage(cidr: String?): String {
-            return "Invalid CIDR:" + cidr
+            return "Invalid CIDR: $cidr"
         }
     }
 }
